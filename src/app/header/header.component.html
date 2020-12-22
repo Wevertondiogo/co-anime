@@ -1,0 +1,13 @@
+<mat-toolbar class="header" >
+    <a href="#" class="brand">Co-anime</a>
+    <mat-tab-group animationDuration=0ms>
+        <mat-tab label="Home"></mat-tab>
+        <mat-tab label="Categories"></mat-tab>
+        <mat-tab label="About"></mat-tab>
+        <mat-tab label="Contact"></mat-tab>
+    </mat-tab-group>
+    <ul class="group-icons">
+        <button class="btn-icon material-icons" (click)="openDialog($event.target)" name="sing-up">perm_identity</button>
+        <button class="btn-icon material-icons" (click)="openDialog($event.target)" name="login">login</button>
+    </ul>
+</mat-toolbar>

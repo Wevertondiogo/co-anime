@@ -1,0 +1,23 @@
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    .brand
+    {
+        text-decoration: none;
+        color: #000;
+        font-style: italic;
+    }
+    .group-icons
+    {
+        display: flex;
+        .btn-icon
+        {
+            padding: 0 12px;
+            background: none;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+        }
+    }
+}
