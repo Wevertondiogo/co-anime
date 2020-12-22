@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
 
     this.service.sendDialog(event.name);
   }
+  public name: string = "Paulo Hericles";
 
   ngOnInit(): void {
   }
