@@ -8,6 +8,32 @@
         color: #000;
         font-style: italic;
     }
+    .navigation
+    {
+        flex: .7;
+        .nav-item
+        {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .tab
+            {
+                background-color: #000;
+                height: 2px;
+                
+                position: absolute;
+                bottom: 0;
+                transition: 0.5s;
+            }
+
+            .nav-link
+            {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
     .group-icons
     {
         display: flex;
