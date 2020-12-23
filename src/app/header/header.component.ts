@@ -8,8 +8,11 @@ import { DialogComponent } from './dialog/dialog.component';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent implements OnInit {
+  
   constructor(public dialog: MatDialog, private service: HeaderService) { }
+
   public openDialog(event: any): void {
     this.dialog.open(DialogComponent);
     

@@ -9,8 +9,13 @@
             <a href="#" class="nav-link">Contact</a>
         </li>
     </ul>
-    <ul class="group-icons">
-        <button class="btn-icon material-icons" (click)="openDialog($event.target)" name="sing-up">perm_identity</button>
-        <button class="btn-icon material-icons" (click)="openDialog($event.target)" name="login">login</button>
+
+    <ul class="no-bullet-list list">
+        <li>
+            <a (click)="openDialog($event.target)" id="sign-up">Sign Up</a>
+        </li>
+        <!-- <li>
+            <a (click)="openDialog($event.target)" name="login">Log In</a>
+        </li> -->
     </ul>
 </mat-toolbar>

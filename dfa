@@ -1,0 +1,16 @@
+[1mdiff --git a/src/app/header/header.component.ts b/src/app/header/header.component.ts[m
+[1mindex 198c4d3..eb275f5 100644[m
+[1m--- a/src/app/header/header.component.ts[m
+[1m+++ b/src/app/header/header.component.ts[m
+[36m@@ -8,8 +8,11 @@[m [mimport { DialogComponent } from './dialog/dialog.component';[m
+   templateUrl: './header.component.html',[m
+   styleUrls: ['./header.component.scss'][m
+ })[m
+[32m+[m
+ export class HeaderComponent implements OnInit {[m
+[32m+[m[41m  [m
+   constructor(public dialog: MatDialog, private service: HeaderService) { }[m
+[32m+[m
+   public openDialog(event: any): void {[m
+     this.dialog.open(DialogComponent);[m
+     [m
