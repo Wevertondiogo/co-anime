@@ -2,16 +2,15 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HeaderService {
-  private dialogRef = new BehaviorSubject<string>("");
+  private dialogRef = new BehaviorSubject<string>('');
   public asDialogRef = this.dialogRef.asObservable();
 
-  constructor() { }
+  constructor() {}
 
-  public sendDialog(dialog: string)
-  {
+  public sendDialog(dialog: string) {
     return this.dialogRef.next(dialog);
   }
 }

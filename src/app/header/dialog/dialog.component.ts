@@ -13,7 +13,7 @@ export class DialogComponent implements OnInit {
   constructor(private service: HeaderService) { }
 
   ngOnInit(): void {
-    this.service.asDialogRef.subscribe(dialog=> this.dialog = dialog)
+    this.service.asDialogRef.subscribe(dialog => this.dialog = dialog)
   }
 
 }

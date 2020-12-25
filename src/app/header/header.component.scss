@@ -1,49 +1,60 @@
-.header
-{
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #121315;
+  height: 15vh;
+  padding: 0 5%;
+  .brand {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 2px 2px #fe2b00;
+    text-decoration: none;
+    color: #f83b15;
+  }
+  .navigation {
+    flex: 0.7;
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    .brand
-    {
-        text-decoration: none;
-        color: #000;
-        font-style: italic;
-    }
-    .navigation
-    {
-        flex: .7;
-        .nav-item
-        {
-            position: relative;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            .tab
-            {
-                background-color: #000;
-                height: 2px;
-                
-                position: absolute;
-                bottom: 0;
-                transition: 0.5s;
-            }
+    justify-content: space-evenly;
+    align-items: center;
+    .tab {
+      background-color: #fff;
+      height: 1px;
 
-            .nav-link
-            {
-                text-decoration: none;
-                color: #000;
-            }
-        }
+      position: absolute;
+      bottom: 0;
+      transition: 0.5s;
     }
-    .group-icons
-    {
-        display: flex;
-        .btn-icon
-        {
-            padding: 0 12px;
-            background: none;
-            border: none;
-            outline: 0;
-            cursor: pointer;
-        }
+    .nav-item {
+      font-family: "Ubuntu", sans-serif;
+      list-style: none;
+
+      cursor: pointer;
+
+      .nav-link {
+        text-decoration: none;
+        color: #fff;
+      }
     }
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    #sign-up {
+      font-size: 14px;
+      padding: 16px;
+      background-color: #fe2b00;
+      color: #f8ffff;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px 2px rgba(#fe2b00, 0.3);
+
+      &:hover {
+        box-shadow: 0px 0px 10px 3px rgba(#fe2b00, 0.5);
+      }
+    }
+  }
 }

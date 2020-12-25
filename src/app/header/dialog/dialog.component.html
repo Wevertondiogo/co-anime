@@ -1,9 +1,14 @@
-<h2 mat-dialog-title>Install Angular</h2>
-<mat-dialog-content class="mat-typography">
- <div class="tst" *ngIf="dialog === 'sing-up'">sign-up</div>
- <div class="tst" *ngIf="dialog === 'login'">login</div>
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
-</mat-dialog-actions>
+  <h2 mat-dialog-title class="dialog-title">{{dialog}}</h2>
+  <mat-dialog-content class="mat-typography">
+    <div class="sign-up" *ngIf="dialog === 'sing-up'">
+      <app-sing-up></app-sing-up>
+    </div>
+    <div class="login" *ngIf="dialog === 'login'">
+      <app-login></app-login>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-flat-button mat-dialog-close class="btn">Cancel</button>
+    <button mat-flat-button [mat-dialog-close]="true" cdkFocusInitial class="btn">Send</button>
+  </mat-dialog-actions>
+
