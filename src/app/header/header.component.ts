@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   hasClick: string = 'no click';
   navLinkName: string = '';
   constructor(public dialog: MatDialog, private service: HeaderService) {}
+
   public openDialog(event: any): void {
     this.dialog.open(DialogComponent);
     this.service.sendDialog(event.id);
