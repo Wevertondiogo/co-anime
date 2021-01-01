@@ -1,31 +1,31 @@
 <mat-toolbar class="header" >
     <a href="#" class="brand">Co-anime</a>
     <ul class="navigation">
-        <span class="tab"></span>
-        <li class="nav-item">
+        <!-- <span class="tab"></span> -->
+        <li class="nav-item" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" >
             <a routerLink="" class="nav-link" id="home">Home</a>
+            <span class="tab home"></span>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"  routerLinkActive="active-link">
             <a routerLink="/category" class="nav-link" id="category">Category</a>
+            <span class="tab category"></span>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"  routerLinkActive="active-link">
             <a routerLink="/about" class="nav-link" id="about">About</a>
+            <span class="tab about"></span>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"  routerLinkActive="active-link">
             <a routerLink="/contact" class="nav-link" id="contact">Contact</a>
+            <span class="tab contact"></span>
         </li>
     </ul>
 
-    <ul class="no-bullet-list list">
+    <!-- <ul class="no-bullet-list list">
         <li>
-            <a (click)="openDialog($event.target)" id="sign-up">Sign Up</a>
+            <a (click)="openDialog($event.target)" id="sign-up" mat-flat-button>Sign Up</a>
         </li>
-        <!-- <li>
-<<<<<<< HEAD
+        <li>
             <a (click)="openDialog($event.target)" id="login">Log In</a>
-=======
-            <a (click)="openDialog($event.target)" name="login">Log In</a>
->>>>>>> 17349a166894b62bcdf9f90338b43ebda4ce2c18
-        </li> -->
-    </ul>
+        </li>
+    </ul> -->
 </mat-toolbar>
