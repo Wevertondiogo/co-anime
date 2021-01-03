@@ -1,9 +1,9 @@
-  <h2 mat-dialog-title class="dialog-title">{{dialog}}</h2>
+  <h2 mat-dialog-title class="dialog-title">{{titleDialog}}</h2>
   <mat-dialog-content class="mat-typography">
-    <div class="sign-up" *ngIf="dialog === 'sing-up'">
+    <div class="sign-up" *ngIf="titleDialog === 'sing-up'">
       <app-sing-up></app-sing-up>
     </div>
-    <div class="login" *ngIf="dialog === 'login'">
+    <div class="login" *ngIf="titleDialog === 'login'">
       <app-login></app-login>
     </div>
   </mat-dialog-content>

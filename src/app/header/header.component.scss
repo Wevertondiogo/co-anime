@@ -4,6 +4,7 @@
   justify-content: space-around;
   background-color: #222933;
   height: 13vh;
+  padding: 0 2%;
   .brand {
     font: {
       family: "Ubuntu", sans-serif;
@@ -20,6 +21,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
+
     // .tab {
     //   background-color: #fff;
     //   height: 1px;
@@ -72,6 +74,37 @@
         color: #3e4557;
 
         font-weight: bold;
+      }
+    }
+  }
+
+  .btn-list {
+    flex: 0.2;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    .btn {
+      width: 100px;
+      color: #fff;
+    }
+    .login {
+      background-color: #f83b15;
+      border: 2px outset transparent;
+      transition: 0.3s ease-in;
+      &:hover {
+        background-color: transparent;
+        border: 2px outset #f83b15;
+      }
+    }
+    .sign-up {
+      background-color: transparent;
+      border: 2px outset #f83b15;
+      color: #f83b15;
+      transition: 0.3s ease-in;
+
+      &:hover {
+        background-color: #131a20;
+        border: 2px outset transparent;
       }
     }
   }

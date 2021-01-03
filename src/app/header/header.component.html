@@ -1,31 +1,35 @@
-<mat-toolbar class="header" >
-    <a href="#" class="brand">Co-anime</a>
-    <ul class="navigation">
-        <!-- <span class="tab"></span> -->
-        <li class="nav-item" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" >
-            <a routerLink="" class="nav-link" id="home">Home</a>
-            <span class="tab home"></span>
-        </li>
-        <li class="nav-item"  routerLinkActive="active-link">
-            <a routerLink="/category" class="nav-link" id="category">Category</a>
-            <span class="tab category"></span>
-        </li>
-        <li class="nav-item"  routerLinkActive="active-link">
-            <a routerLink="/about" class="nav-link" id="about">About</a>
-            <span class="tab about"></span>
-        </li>
-        <li class="nav-item"  routerLinkActive="active-link">
-            <a routerLink="/contact" class="nav-link" id="contact">Contact</a>
-            <span class="tab contact"></span>
-        </li>
-    </ul>
+<mat-toolbar class="header">
+  <a href="#" class="brand">Co-anime</a>
+  <ul class="navigation">
+    <!-- <span class="tab"></span> -->
+    <li
+      class="nav-item"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a routerLink="" class="nav-link" id="home">Home</a>
+      <span class="tab home"></span>
+    </li>
+    <li class="nav-item" routerLinkActive="active-link">
+      <a routerLink="/category" class="nav-link" id="category">Category</a>
+      <span class="tab category"></span>
+    </li>
+    <li class="nav-item" routerLinkActive="active-link">
+      <a routerLink="/about" class="nav-link" id="about">About</a>
+      <span class="tab about"></span>
+    </li>
+    <li class="nav-item" routerLinkActive="active-link">
+      <a routerLink="/contact" class="nav-link" id="contact">Contact</a>
+      <span class="tab contact"></span>
+    </li>
+  </ul>
 
-    <!-- <ul class="no-bullet-list list">
-        <li>
-            <a (click)="openDialog($event.target)" id="sign-up" mat-flat-button>Sign Up</a>
-        </li>
-        <li>
-            <a (click)="openDialog($event.target)" id="login">Log In</a>
-        </li>
-    </ul> -->
+  <ul class="btn-list">
+    <button (click)="openDialog($event.target)" class="btn login" mat-flat-button>
+      Login
+    </button>
+    <button (click)="openDialog($event.target)" class="btn sign-up" mat-flat-button>
+      Sign Up
+    </button>
+  </ul>
 </mat-toolbar>

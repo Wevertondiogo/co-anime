@@ -4,16 +4,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-dialog',
   templateUrl: './dialog.component.html',
-  styleUrls: ['./dialog.component.scss']
+  styleUrls: ['./dialog.component.scss'],
 })
 export class DialogComponent implements OnInit {
+  titleDialog!: string;
 
-  dialog!: string;
-
-  constructor(private service: HeaderService) { }
+  constructor(private service: HeaderService) {}
 
   ngOnInit(): void {
-    this.service.asDialogRef.subscribe(dialog => this.dialog = dialog)
+    this.service.asDialogRef.subscribe(
+      (typeDialog) => (this.titleDialog = typeDialog)
+    );
   }
-
 }
