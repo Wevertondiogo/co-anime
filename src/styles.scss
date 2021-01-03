@@ -12,3 +12,29 @@ body {
 .no-bullet-list {
   list-style: none;
 }
+.mat-dialog-container {
+  background-color: #222933;
+}
+.mat-form-field-outline-gap {
+  border: 1px solid #0e0e0e !important;
+  border-left-style: none !important;
+  border-right-style: none !important;
+
+  opacity: 0.7;
+}
+
+.mat-form-field-outline-start,
+.mat-form-field-outline-end {
+  border: 1px solid #0e0e0e !important;
+  opacity: 0.7;
+}
+.mat-form-field-outline-start {
+  border-right-style: none !important;
+}
+.mat-form-field-outline-end {
+  border-left-style: none !important;
+}
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-outline-gap {
+  border-top-color: transparent !important;
+}
